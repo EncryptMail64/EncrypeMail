@@ -13,7 +13,7 @@ using MailKit.Search;
 using MailKit.Security;
 
 
-namespace 加密邮箱
+namespace EncryptMail
 {
 
     public partial class Form1 : Form
@@ -725,6 +725,13 @@ namespace 加密邮箱
             }
             array[i] = AESEncrypt(ToLong(fr2.Name, 20, '*') + fr2.Key + fr2.iv + fr2.Mailaddress, pkey, piv);
             File.WriteAllLines("friendlist.ini", array);//更改friendlist.ini文件
+        }
+
+        private void 关于EncryptMailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About fm = new About();
+            fm.Show();
+            return;
         }
     }
 

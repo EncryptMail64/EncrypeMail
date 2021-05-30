@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace EncryptMail
 {
-    public partial class Form3 : Form
+    public partial class About : Form
     {
-        public Form3()
+        public About()
         {
             InitializeComponent();
-        }
-
-        public static string setPasswd;
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text != null) setPasswd = this.textBox1.Text;
-            this.Close();
-            return;
         }
     }
 }

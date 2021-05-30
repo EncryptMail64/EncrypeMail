@@ -1,5 +1,5 @@
 ﻿
-namespace 加密邮箱
+namespace EncryptMail
 {
     partial class Form3
     {
