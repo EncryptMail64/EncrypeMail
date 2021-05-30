@@ -21,7 +21,12 @@ namespace EncryptMail
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null) setPasswd = this.textBox1.Text;
+            if (textBox1.Text == null)
+            {
+                MessageBox.Show("密码不能为空！");
+                return;
+            }
+            else setPasswd = this.textBox1.Text;
             this.Close();
             return;
         }

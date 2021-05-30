@@ -153,6 +153,7 @@ namespace EncryptMail
         }//修改名为filename的文本文档，将其第line行内容修改为str。
         private void SaveMessage(string name, string msg)
         {
+            if (!Directory.Exists(@".\message\")) Directory.CreateDirectory(@".\message\");
             string path = @".\message\" + name + ".dat";
             FileStream fs = new FileStream(path, FileMode.Append, FileAccess.Write);
             byte[] buffer = Encoding.UTF8.GetBytes(msg);
@@ -427,9 +428,12 @@ namespace EncryptMail
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!File.Exists("config.ini")) File.Create("config.ini");
+            if (!File.Exists("config.ini")) File.Create("config.ini").Dispose();
             string[] array = File.ReadAllLines("config.ini");
-            if ((array.Length < 1) || (array[0].Length < 20)) WriteFile("config.ini", 1, "这是Encryp2tMail的配置文件,不要更改此文件。");
+            if ((array.Length < 1) || (array[0].Length < 20))
+            {
+                WriteFile("config.ini", 1, "这是Encryp2tMail的配置文件,不要更改此文件。");
+            }
             if ((array.Length < 2) || (array[1].Length < 16))//检查向量是否存在
             {
                 piv = GetRandomString(16);

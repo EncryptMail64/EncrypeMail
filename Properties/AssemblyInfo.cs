@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("加密邮箱")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("EncryptMail")]
+[assembly: AssemblyDescription("加密IM邮件客户端")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("加密邮箱")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyProduct("EncryptMail")]
+[assembly: AssemblyCopyright("Copyright ©  2021 EncryptMail")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
