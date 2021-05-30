@@ -159,7 +159,7 @@ namespace 加密邮箱
             fs.Write(buffer, 0, buffer.Length);
             fs.Close();
             fs.Dispose();
-        }//将消息msg储存入名为mailfrom的文档中。
+        }//将消息msg储存入对应的文档中。
         public static void DelectDir(string srcPath)
         {
             try
