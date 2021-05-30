@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EncryptMail
+namespace 加密邮箱
 {
     public partial class Form4 : Form
     {

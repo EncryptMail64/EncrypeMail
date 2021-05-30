@@ -1,5 +1,5 @@
 ﻿
-namespace EncryptMail
+namespace 加密邮箱
 {
     partial class Form1
     {
@@ -122,15 +122,14 @@ namespace EncryptMail
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // 关于EncryptMailToolStripMenuItem
             // 
             this.关于EncryptMailToolStripMenuItem.Name = "关于EncryptMailToolStripMenuItem";
-            this.关于EncryptMailToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.关于EncryptMailToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.关于EncryptMailToolStripMenuItem.Text = "关于EncryptMail";
-            this.关于EncryptMailToolStripMenuItem.Click += new System.EventHandler(this.关于EncryptMailToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
@@ -239,8 +238,8 @@ namespace EncryptMail
             // 
             // MsgBox
             // 
-            this.MsgBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.MsgBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MsgBox.Location = new System.Drawing.Point(12, 72);
             this.MsgBox.Multiline = true;
@@ -252,7 +251,7 @@ namespace EncryptMail
             // 
             // InputBox
             // 
-            this.InputBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.InputBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.InputBox.Location = new System.Drawing.Point(12, 419);
             this.InputBox.Multiline = true;
@@ -262,7 +261,7 @@ namespace EncryptMail
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.FriendList);
@@ -286,7 +285,7 @@ namespace EncryptMail
             // 
             // FriendList
             // 
-            this.FriendList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.FriendList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.FriendList.ContextMenuStrip = this.contextMenuStrip1;
             this.FriendList.FormattingEnabled = true;
@@ -439,6 +438,7 @@ namespace EncryptMail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1009, 610);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.time);
